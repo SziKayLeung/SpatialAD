@@ -1,0 +1,2 @@
+# software
+#wget -O spaceranger-3.0.0.tar.gz "https://cf.10xgenomics.com/releases/spatial-exp/spaceranger-3.0.0.tar.gz?Expires=1716608405&Key-Pair-Id=APKAI7S6A5RYOXBWRPDA&Signature=C2ya9TZSJ1Pge0Qvvq5TVeisiOUZgjLRi7Mn2dNN9EEmRsYDCxHpbRjZsUH7wA94aa~W5WH~vPZQV5ALiNORTOCmzqAKJw8eV~uGKulIVoiy~9GbWoMHd3Ng-mu1FZ6-FHpqnNi6oIQhXrbPC2vofHOjFtFPuoUs-4P3HLjXbT1qoCY~c1L3Ir2uzSIdUIwihST76auyUiL92tsyDInblMIWlOm44-ZCNF7ThbDpnEbkw694Lg1uWXTabRxHuSXW1n0d5ByMwKe61NV9PC6qZdZVkRU2~mWqoGWIcbVAz2sZnWQkgNL44Nyy2rqqtjPfJKhiiYbVz~mP9wqo9sSANQ__"
