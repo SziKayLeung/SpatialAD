@@ -11,6 +11,10 @@
 #SBATCH --output=1_run_spaceRangerCount.o
 #SBATCH --error=1_run_spaceRangerCount.e
 
+# 6 hours to run
+# 12.06.2024: input of brightfield tif; note still using override-id 
+# use loupebrower alignment with all spots
+
 source ./input.config
 
 cd ${WKDIR}/2_spaceRangerCount
@@ -21,10 +25,13 @@ cd ${WKDIR}/2_spaceRangerCount
 # ID and name
 # processing power
 
+sampleID=11142_948
+sampleName=SampleA
+
 spaceranger count \
     --fastqs=${demux_fastq} \
-    --cytaimage=${sampleA_tif} --area=${areaSize} --slide=${slideSerialNumber} \
-    --override-id \
+    --cytaimage=${sampleA_tif} --area=${areaSize} --slide=${slideSerialNumber} --loupe-alignment=${sampleA_allSpots_loupe}\
     --transcriptome=${X10Ref} --probe-set=${inputProbeSet} \
-    --id=${sampleName} --sample=${sampleID} \
+    --id=${sampleName} --sample=${sampleID} --use-all-spots \
     --create-bam=true &>> ${sampleName}_spaceRanger.log
+    
